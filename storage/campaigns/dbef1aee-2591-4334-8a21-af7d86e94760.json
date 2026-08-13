@@ -1,0 +1,25 @@
+{
+    "campaign_id": "dbef1aee-2591-4334-8a21-af7d86e94760",
+    "subject": "Understanding Diabetes Mellitus and How It Can Be Managed Effectively",
+    "recipient_count": 3,
+    "recipients": {
+        "newborn2023rizwan@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-2253580306045069588",
+            "message_id": "19ffc17147e99baf",
+            "thread_id": "19ffc17147e99baf"
+        },
+        "humayunkabirbgce@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-2253580306045069588",
+            "message_id": "19ffc17147e99baf",
+            "thread_id": "19ffc17147e99baf"
+        },
+        "rizwan_164@yahoo.com": {
+            "status": "draft_created",
+            "draft_id": "r-2253580306045069588",
+            "message_id": "19ffc17147e99baf",
+            "thread_id": "19ffc17147e99baf"
+        }
+    }
+}

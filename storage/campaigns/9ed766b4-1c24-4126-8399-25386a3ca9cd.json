@@ -1,0 +1,25 @@
+{
+    "campaign_id": "9ed766b4-1c24-4126-8399-25386a3ca9cd",
+    "subject": "Introducing Our Professional Services to Support Your Business",
+    "recipient_count": 3,
+    "recipients": {
+        "newborn2023rizwan@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-3298374125068330914",
+            "message_id": "19ffc05c26aa66d2",
+            "thread_id": "19ffc05c26aa66d2"
+        },
+        "humayunkabirbgce@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-3298374125068330914",
+            "message_id": "19ffc05c26aa66d2",
+            "thread_id": "19ffc05c26aa66d2"
+        },
+        "rizwan_164@yahoo.com": {
+            "status": "draft_created",
+            "draft_id": "r-3298374125068330914",
+            "message_id": "19ffc05c26aa66d2",
+            "thread_id": "19ffc05c26aa66d2"
+        }
+    }
+}

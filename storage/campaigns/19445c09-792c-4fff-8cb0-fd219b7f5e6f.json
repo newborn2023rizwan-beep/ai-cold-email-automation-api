@@ -1,0 +1,25 @@
+{
+    "campaign_id": "19445c09-792c-4fff-8cb0-fd219b7f5e6f",
+    "subject": "Introducing WHO Regional Office Diabetes Management Guidelines",
+    "recipient_count": 3,
+    "recipients": {
+        "newborn2023rizwan@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-2446424236011685702",
+            "message_id": "19ffc0f48c9e638c",
+            "thread_id": "19ffc0f48c9e638c"
+        },
+        "humayunkabirbgce@gmail.com": {
+            "status": "draft_created",
+            "draft_id": "r-2446424236011685702",
+            "message_id": "19ffc0f48c9e638c",
+            "thread_id": "19ffc0f48c9e638c"
+        },
+        "rizwan_164@yahoo.com": {
+            "status": "draft_created",
+            "draft_id": "r-2446424236011685702",
+            "message_id": "19ffc0f48c9e638c",
+            "thread_id": "19ffc0f48c9e638c"
+        }
+    }
+}
