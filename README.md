@@ -22,6 +22,18 @@ The system allows a user to:
 6. Create Gmail drafts for recipient batches.
 7. Track campaign and recipient information.
 
+---
+
+## Business Value
+
+This project is more than an AI email generator.
+
+It connects company knowledge, prospect data, AI content generation, Gmail, and campaign tracking into a single outreach automation workflow.
+
+The result is a reusable foundation for businesses that want to reduce repetitive email work, maintain consistent messaging, and scale professional outreach more efficiently.
+
+---
+
 ### Core Workflow
 
 Knowledge Base PDF +
@@ -59,30 +71,32 @@ Campaign Tracking
 ## Architecture
 
 Client
-│
-├── Knowledge Base
-├── Recipient List
-└── Campaign Instruction
-│
-↓
-FastAPI Backend
-│
-┌────┴─────┐
-↓ ↓
-OpenAI Storage
-│ │
-↓ ├── Campaigns
-Campaign ├── Recipients
-Content └── Knowledge Base
-│
-↓
-Gmail API
-│
-↓
-Gmail Draft
-│
-↓
+  │
+  ├── Knowledge Base
+  ├── Recipient List
+  └── Campaign Instruction
+          │
+          ▼
+   FastAPI Backend
+      │       │
+      ▼       ▼
+   OpenAI   Storage
+      │       ├── Campaigns
+      │       ├── Recipients
+      │       └── Knowledge Base
+      │
+      ▼
+ Campaign Content
+      │
+      ▼
+   Gmail API
+      │
+      ▼
+ Gmail Draft
+      │
+      ▼
 Campaign Tracking
+
 
 ---
 
@@ -90,25 +104,26 @@ Campaign Tracking
 
 app/
 ├── api/
-│ └── campaign.py
+│   └── campaign.py
 ├── auth/
-│ └── google_auth.py
+│   └── google_auth.py
 ├── config/
-│ └── google/
-│ └── settings.py
+│   └── google/
+│       └── settings.py
 ├── services/
-│ ├── campaign_ai_service.py
-│ ├── campaign_gmail_service.py
-│ ├── campaign_tracking_service.py
-│ ├── ai_service.py
-│ ├── gmail_service.py
-│ └── email_tracking_service.py
+│   ├── campaign_ai_service.py
+│   ├── campaign_gmail_service.py
+│   ├── campaign_tracking_service.py
+│   ├── ai_service.py
+│   ├── gmail_service.py
+│   └── email_tracking_service.py
 └── main.py
 
 storage/
 ├── campaigns/
 ├── knowledge_base/
 └── recipients/
+```
 
 ### Important Modules
 
@@ -216,12 +231,6 @@ This allows the system to maintain campaign state for individual recipients and 
 - Draft/message/thread ID tracking
 - End-to-end campaign draft testing
 
-### Remaining
-
-- Draft → Send workflow
-- Post-send status tracking
-- Final end-to-end send test
-
 ---
 
 ## Example Business Use Case
@@ -251,10 +260,4 @@ Potential future extensions include:
 
 ---
 
-## Business Value
 
-This project is more than an AI email generator.
-
-It connects company knowledge, prospect data, AI content generation, Gmail, and campaign tracking into a single outreach automation workflow.
-
-The result is a reusable foundation for businesses that want to reduce repetitive email work, maintain consistent messaging, and scale professional outreach more efficiently.
