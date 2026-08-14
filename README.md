@@ -70,31 +70,34 @@ Campaign Tracking
 
 ## Architecture
 
+```text
 Client
-  │
-  ├── Knowledge Base
-  ├── Recipient List
-  └── Campaign Instruction
-          │
-          ▼
-   FastAPI Backend
-      │       │
-      ▼       ▼
-   OpenAI   Storage
-      │       ├── Campaigns
-      │       ├── Recipients
-      │       └── Knowledge Base
-      │
-      ▼
- Campaign Content
-      │
-      ▼
-   Gmail API
-      │
-      ▼
- Gmail Draft
-      │
-      ▼
+│
+├── Knowledge Base
+├── Recipient List
+└── Campaign Instruction
+        │
+        ▼
+FastAPI Backend
+        │
+   ┌────┴────┐
+   ▼         ▼
+OpenAI     Storage
+   │         │
+   │         ├── Campaigns
+   │         ├── Recipients
+   │         └── Knowledge Base
+   │
+   ▼
+Campaign Content
+        │
+        ▼
+Gmail API
+        │
+        ▼
+Gmail Draft
+        │
+        ▼
 Campaign Tracking
 
 
